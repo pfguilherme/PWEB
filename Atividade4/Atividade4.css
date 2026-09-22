@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+.nav-menu {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    gap: 15px;
+    overflow: hidden;
+    background-color: #373636;
+    position: fixed;
+    list-style: none;
+    display: flex;
+}
+
+.nav-item {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 15px;
+}
+
+body {
+    padding-top: 100px;
+    background-color: rgb(148, 173, 237);
+}
+
+.container {
+    display: grid;
+    padding-left: 10%;
+    padding-right: 10%;
+    grid-gap: 10px;
+    grid-template-rows: 300px 300px;
+    grid-template-areas:
+        'a b c'
+        'a d e';
+}
+
+.box {
+    margin: 10px;
+    padding: 10px;
+    max-width: 400px;
+    max-height: 575px;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 2%;
+    background-color: rgba(3, 46, 64, 0.478);
+}
+
+.box:hover {
+    background-color: rgb(49, 166, 216);
+}
+
+.news-title {
+    color: rgb(240, 230, 230);
+}
+
+.news-category {
+    color: rgb(255, 213, 133);
+}
+
+.news-text {
+    text-align: justify;
+    color: rgb(255, 255, 255);
+}
+
+img {
+    display: block;
+    margin: auto;
+    border-radius: 10%;
+}
+
+.a {
+    grid-area: a;
+}
+
+.b {
+    grid-area: b;
+}
+
+.c {
+    grid-area: c;
+}
+
+.d {
+    grid-area: d;
+}
+
+.e {
+    grid-area: e;
+}
