@@ -16,13 +16,13 @@
 
 .nav-item {
     color: white;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding-left: 15px;
 }
 
 body {
     padding-top: 100px;
-    background-color: rgb(148, 173, 237);
+    background-color: rgb(244, 243, 243);
 }
 
 .container {
@@ -30,44 +30,75 @@ body {
     padding-left: 10%;
     padding-right: 10%;
     grid-gap: 10px;
-    grid-template-rows: 300px 300px;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
     grid-template-areas:
-        'a b c'
-        'a d e';
+        'a a f g'
+        'a a b c'
+        'a a d e';
+}
+
+.main-box {
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    max-width: 400px;
+    max-height: 500px;
 }
 
 .box {
-    margin: 10px;
-    padding: 10px;
-    max-width: 400px;
-    max-height: 575px;
     text-align: left;
-    font-family: 'Roboto', sans-serif;
-    border-radius: 2%;
-    background-color: rgba(3, 46, 64, 0.478);
-}
-
-.box:hover {
-    background-color: rgb(49, 166, 216);
+    display: flex;
+    gap: 10px;
 }
 
 .news-title {
-    color: rgb(240, 230, 230);
+    color: rgb(181, 16, 16);
+    font-family: 'Roboto', sans-serif;
+}
+
+.news-title:hover {
+    color: rgb(118, 13, 13);
+    cursor: pointer;
 }
 
 .news-category {
-    color: rgb(255, 213, 133);
+    color: rgb(209, 169, 35);
+    font-family: 'Roboto', sans-serif;
 }
 
-.news-text {
-    text-align: justify;
-    color: rgb(255, 255, 255);
+.news-list-title {
+    color: rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+}
+
+.news-list {
+    border-radius: 2%;
+    border: 1px solid lightgray;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.news-list-link {
+    color: rgb(181, 16, 16);
+}
+
+.news-list-link:hover {
+    color: rgb(118, 13, 13);
+    cursor: pointer;
+}
+
+.main-news-img:hover {
+    cursor: pointer;
+}
+
+.small-news-img:hover {
+    cursor: pointer;
 }
 
 img {
-    display: block;
-    margin: auto;
     border-radius: 10%;
+    border: 1px solid lightgray;
 }
 
 .a {
